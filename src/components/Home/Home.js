@@ -75,8 +75,6 @@ const PHONE_NUMBER = "9165041080";
 
 const SonewaniJungleSafari = () => {
   const [showHero, setShowHero] = useState(false);
-  const [showPopup, setShowPopup] = useState(() => !localStorage.getItem("hasVisited"));
-  const [zoomImage, setZoomImage] = useState(null);
   const [isHoveringTop, setIsHoveringTop] = useState(false);
   const [isHoveringBottom, setIsHoveringBottom] = useState(false);
   const [sideNavOpen, setSideNavOpen] = useState(false);
@@ -124,18 +122,17 @@ const SonewaniJungleSafari = () => {
   }, []);
 
   useEffect(() => {
-    if (sideNavOpen || showPackageForm || showPopup || showConfirmPopup) {
+    if (sideNavOpen || showPackageForm || showConfirmPopup) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
     }
-  }, [sideNavOpen, showPackageForm, showPopup, showConfirmPopup]);
+  }, [sideNavOpen, showPackageForm, showConfirmPopup]);
 
   const handleTouchStartTop = () => setIsHoveringTop(true);
   const handleTouchEndTop = () => setIsHoveringTop(false);
   const handleTouchStartBottom = () => setIsHoveringBottom(true);
   const handleTouchEndBottom = () => setIsHoveringBottom(false);
-  const handleImageClick = (url) => setZoomImage(url);
 
   const openPackageForm = (pkgName) => {
     setSelectedPackage(pkgName);
@@ -482,7 +479,7 @@ const SonewaniJungleSafari = () => {
                 cursor: "zoom-in",
                 transition: "transform 0.3s",
                 minWidth: 380
-              }} onClick={() => handleImageClick(url)} draggable={false} />
+              }} draggable={false} />
             ))}
           </div>
         </div>
@@ -504,7 +501,7 @@ const SonewaniJungleSafari = () => {
                 cursor: "zoom-in",
                 transition: "transform 0.3s",
                 minWidth: 380
-              }} onClick={() => handleImageClick(url)} draggable={false} />
+              }} draggable={false} />
             ))}
           </div>
         </div>
