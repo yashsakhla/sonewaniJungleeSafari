@@ -62,7 +62,7 @@ const PACKAGES = [
     bg: image1,
     icon: <FaSun size={32} color="#FFD600" />,
     details: [
-      { icon: <FaUsers />, text: "Up to 5 people in Jeep" },
+      { icon: <FaUsers />, text: "Up to 6 people in Jeep" },
       { icon: <FaCarSide />, text: "Jeep Safari with guide" },
       { icon: <FaCoffee />, text: "Breakfast break included" },
       { icon: <FaCampground />, text: "Multiple activities" },
@@ -77,7 +77,7 @@ const PACKAGES = [
     bg: image2,
     icon: <FaMoon size={32} color="#00BFFF" />,
     details: [
-      { icon: <FaUsers />, text: "Up to 5 people in Jeep" },
+      { icon: <FaUsers />, text: "Up to 6 people in Jeep" },
       { icon: <FaCarSide />, text: "Jeep Safari with guide" },
       { icon: <FaCampground />, text: "Campfire break included" },
       { icon: <FaCoffee />, text: "Evening refreshments" },

@@ -1,43 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic -->
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+
+    <!-- Title (MOST IMPORTANT) -->
+    <title>Sonewani Safari Booking | Wildlife Safari in Madhya Pradesh</title>
+
+    <!-- SEO Meta Description -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Book Sonewani Wildlife Safari online. Experience thrilling morning & evening jungle safaris with guided jeep rides in Sonewani, Madhya Pradesh."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Sonewani Wild Life Safari</title>
+    <!-- SEO Keywords (still helpful for Bing & others) -->
+    <meta
+      name="keywords"
+      content="Sonewani Safari, Sonewani Wildlife Safari Booking, Jungle Safari Madhya Pradesh, Tiger Safari, Jeep Safari India"
+    />
+
+    <!-- Brand -->
+    <meta name="author" content="Sonewani Wildlife Safari" />
+    <meta name="theme-color" content="#1b6897" />
+
+    <!-- Favicon & Logo -->
+    <link rel="icon" href="%PUBLIC_URL%/logo.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sonewani Safari Booking | Wildlife Safari Experience" />
+    <meta
+      property="og:description"
+      content="Explore Sonewani Wildlife Safari with guided jeep safaris, morning & evening packages. Book your jungle adventure today!"
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/logo.png" />
+    <meta property="og:url" content="https://www.sonewanisafari.com" />
+    <meta property="og:site_name" content="Sonewani Wildlife Safari" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sonewani Safari Booking" />
+    <meta
+      name="twitter:description"
+      content="Book your Sonewani Wildlife Safari online. Experience nature, wildlife & adventure."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/logo.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Structured Data (VERY IMPORTANT for Google logo & business info) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TouristAttraction",
+        "name": "Sonewani Wildlife Safari",
+        "description": "Sonewani Wildlife Safari offers guided jeep safaris with morning and evening packages in Madhya Pradesh,sonewani.",
+        "image": "https://www.sonewanisafari.com/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sonewani",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-9165041080",
+        "url": "https://www.sonewanisafari.com"
+      }
+    </script>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
